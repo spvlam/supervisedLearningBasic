@@ -3,15 +3,15 @@ from mnist import MNIST
 import matplotlib.pyplot as plt 
 from sklearn import linear_model
 from sklearn.metrics import accuracy_score
-from ..display_network import *
+from display_network import *
 # load all training and testing data
 
-mntrain = MNIST("/home/lamnv/Documents/my carier/Marchine learning/supervise learning/dataMNIST/MNIST")
+mntrain = MNIST("/home/lamnv/Documents/my carier/Marchine learning/supervise learning/data/MNIST")
 mntrain.load_training()
 xtrain_all = np.asarray(mntrain.train_images)
 ytrain_all = np.array(mntrain.train_labels.tolist())
 
-mntest = MNIST("/home/lamnv/Documents/my carier/Marchine learning/supervise learning/dataMNIST/MNIST")
+mntest = MNIST("/home/lamnv/Documents/my carier/Marchine learning/supervise learning/data/MNIST")
 mntest.load_testing()
 xtest_all = np.asarray(mntest.test_images)
 ytest_all = np.array(mntest.test_labels.tolist())
