@@ -1,0 +1,6 @@
+There are at least 4 ways for apply binary classified to multi-classification
+
+1 : One-one
+2 : hierarchical
+3 : binary coding
+4: oe-vs-rest or one hot coding
